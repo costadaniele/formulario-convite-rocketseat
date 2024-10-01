@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Leckerli+One&family=Open+Sans:wght@300..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles/index.css" />
+  <title>Formulário de convite</title>
+</head>
+
+<body>
+
+  <div id="app">
+    <aside>
+      <div class="aside-container">
+        <img src="./assets/images/Logo.svg" alt="Logo" />
+        <h1>Festivite</h1>
+        <p>Crie um convite digital para o seu evento</p>
+      </div>
+    </aside>
+
+    <main>
+      <div class="main-container">
+        <section>
+          <h2>Crie seu convite</h2>
+
+          <form>
+            <fieldset>
+              <legend>
+                <img src="./assets/icons/calendar.svg" alt="ícone de calendário" />
+                Sobre o evento
+              </legend>
+              <div class="input-title">
+                <label for="title-name">Título</label>
+                <input for="title-name" name="title-name" type="text" placeholder="Nome do evento" />
+              </div>
+
+              <div class="date">
+                <label for="start-date">Início</label>
+                <input type="date" name="start-date" id="start-date" lang="pt-br" />
+
+                <label for="end-date">Fim</label>
+                <input type="date" name="end-date" id="end-date" lang="pt-br" />
+              </div>
+
+              <div class="select">
+                <label for="">Tipo</label>
+                <select name="type" id="type">
+                  <option value="presencial">Presencial</option>
+                  <option value="online">Online</option>
+                </select>
+
+                <label>Local</label>
+                <input type="text" id="local" name="local" placeholder="Link ou endereço" />
+              </div>
+
+              <div class="textarea">
+                <label for="description">Descrição</label>
+                <textarea name="description" id="description" type="text" cols="30" rows="10"
+                  placeholder="Escreva sobre os detalhes do evento">
+                </textarea>
+              </div>
+            </fieldset>
+          </form>
+        </section>
+
+        <section>
+          <form method="post" enctype="multipart/form-data"> <!--input file-->
+            <fieldset>
+              <legend class="title">
+                <img src="./assets/icons/paintbrush-vertical.svg" alt="ícone de calendário" />
+                Personalização
+              </legend>
+
+              <div class="color">
+                <label for="color-type">Cor pincipal</label>
+                <input type="color" name="color-type" id="color-type" />
+              </div>
+
+              <div class="event-theme">
+                <label for="">Tema do evento</label>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+              </div>
+
+              <div class="droparea">
+                <label for="style">Estilo</label>
+                <input type="checkbox" id="style" name="style" />
+
+                <label for="photo-file">Foto de capa</label>
+                <input type="file" id="photo-file" name="photo-file" />
+              </div>
+            </fieldset>
+          </form>
+        </section>
+
+        <section>
+          <form>
+            <fieldset>
+              <legend class="title">
+                <img src="./assets/icons/contact.svg" alt="ícone de calendário" />
+                Dados para contato
+              </legend>
+
+              <div class="contact-details">
+                <label for="contact-details">Nome</label>
+                <input type="text" name="contact-details" id="contact-details" placeholder="Nome Completo" />
+              </div>
+
+              <div class="email-details">
+                <label for="email-contact">E-mail</label>
+                <input type="email" name="email-contact" id="email-contact" placeholder="exemplo@email.com" />
+              </div>
+
+              <div class="telephone-details">
+                <label for="telephone-details">Telefone</label>
+                <input type="text" name="telephone-details" id="telephone-details" placeholder="(99) 99999-9999" />
+              </div>
+            </fieldset>
+          </form>
+        </section>
+      </div>
+
+      <footer>
+        <div class="item">
+          <input type="checkbox" />
+          <p>Li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de Privacidade</a></p>
+        </div>
+
+        <div class="item">
+          <input type="checkbox" />
+          <p>Aceito receber atualizações e promoções por e-mail</p>
+        </div>
+
+        <div class="item">
+          <input type="checkbox" />
+          <p>Aceito receber atualizações e promoções por SMS</p>
+        </div>
+
+        <button type="submit">
+          <img src="./assets/icons/ticket.svg" />
+          Gerar convite
+        </button>
+      </footer>
+    </main>
+  </div>
+</body>
+
+</html>
