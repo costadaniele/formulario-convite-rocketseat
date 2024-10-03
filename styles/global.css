@@ -42,8 +42,9 @@
 
   --font-open-sans: "Open Sans", sans-serif;;
   --body-md: 200 1rem var(--font-open-sans);
+  --body-md-regular: 600 1rem var(--font-open-sans);
   --body-sm: 400 0.875rem var(--font-open-sans);
-  --body-xs: 400/600 .75rem var(--font-open-sans);
+  --body-xs: 400 .75rem var(--font-open-sans);
 }
 
 body {

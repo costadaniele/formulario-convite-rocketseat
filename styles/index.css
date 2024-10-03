@@ -1,2 +1,7 @@
 @import url(global.css);
 @import url(layout.css);
+@import url(form.css);
+@import url(button.css);
+@import url(radio-button.css);
+@import url(checkbox.css);
+@import url(contact-details.css);

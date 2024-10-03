@@ -1,0 +1,132 @@
+form {
+  margin-top: 1.5rem;
+}
+
+fieldset {
+  border: none;
+  display: grid;
+  gap: 1rem;
+}
+
+legend {
+  font: var(--heading-sm);
+  color: var(--text-heading);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+label {
+  font: var(--body-sm);
+  color: var(--text-body);
+  display: block;
+  margin-bottom: .75rem;
+}
+
+/* .input-title input, textarea, .details input {
+  width: 35rem;
+} */
+
+/* input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+} */
+
+input[type="datetime-local"] {
+  border-radius: 8px;
+  border: 1px solid var(--input-base);
+  padding: 0.82rem 1rem;
+
+  font: var(--body-md-regular);
+  color: var(--input-placeholder);
+
+  &::-webkit-calendar-picker-indicator {
+    /* display: none; */
+    opacity: 0;
+  }
+}
+
+input[type="text"], textarea, input[type="email"] {
+  appearance: none; /* select */
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--input-base);
+  padding: 0.82rem 1rem;
+
+  font: var(--body-md-regular);
+  color: var(--input-placeholder);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: .2rem solid var(--brand-light);
+  border: .125rem solid var(--input-stroke);
+  outline-offset: .1px;
+}
+
+.date, .select {
+  display: flex;
+  gap: 1rem;
+}
+
+.date input, .select input, .select select, .email-details input, .telephone-details input{
+  width: 17rem;
+}
+
+.customization {
+  display: flex;
+  gap: 1rem;
+  margin-block: .75rem 1.75rem;
+
+  .switch-toggle {
+
+  }
+
+  .file-input .button-text, .switch-toggle .button-text {
+    display: flex;
+    gap: .75rem;
+  }
+
+  .file-input {
+    .button-text {
+      display: flex;
+      align-items: center;
+
+      p {
+        color: var(--input-placeholder);
+        font: var(--body-md);
+      }
+    }
+  
+  
+  .selector{
+    position: relative;
+
+    padding: 12px;
+    background-color: var(--shape-button);
+    border-radius: 8px;
+    display: flex;
+    font: var(--body-sm);
+    color: var(--text-heading);
+
+    & input[type="file"] {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    span {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+  }
+}
+
+input[type="color"] {
+  width: 40px;
+  height: 40px;
+}

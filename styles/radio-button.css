@@ -1,0 +1,56 @@
+.event-theme .theme-selection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+
+  .theme {
+    background-color: var(--shape-button);
+    
+    padding: 4px;
+    gap: 8px;
+    margin-block: 8px;
+    width: 134px;
+    border-radius: 8px;
+    border: 1px solid var(--input-stroke);
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+     input {
+      all: unset;
+      position: absolute;
+      inset: 0;
+
+      cursor: pointer;
+    }
+  }
+
+  .theme label {
+    text-align: center; 
+    margin-block: 8px;
+    font: var(--body-sm);
+    color: var(--text-heading);
+  }
+
+  .theme img {
+    border-radius: 8px;
+  }
+
+  .theme input::placeholder {
+    color: var(--input-placeholder);
+  }
+
+  .theme:hover, .theme:focus {
+    background-color: var(--input-stroke);
+    border: 1px solid var(--shape-hover);
+  }
+
+  .theme:has(:checked) {
+    background-color: var(--shape-button);
+    border: 1px solid var(--brand-light);
+  }
+}

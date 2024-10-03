@@ -1,0 +1,34 @@
+.details {
+  margin-bottom: 3rem;
+
+  .contact-details {
+    input {
+      &:invalid {
+        border: 2px solid var(--danger);
+      }
+
+      &[required] + .error {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+
+        font: var(--body-xs);
+        color: var(--danger);
+
+        margin-top: .5rem;
+      }
+
+      &:not(:focus):valid + .error {
+        display: none;
+      }
+    }
+  }
+
+
+}
+
+.details-2 {
+  display: flex;
+  gap: 1rem;
+  /* width: 17rem; */
+}

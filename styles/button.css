@@ -1,0 +1,27 @@
+.button {
+  display: flex;
+  justify-content: end;
+}
+
+button {
+  all: unset;
+
+  font: var(--body-md);
+  background-color: var(--brand-dark);
+  color: var(--text-heading);
+
+  border-radius: 8px;
+
+  padding: .86rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+
+  margin-top: 3rem;
+
+  cursor: pointer;
+}
+
+button:hover, button:focus{
+  background-color: var(--brand-mid);
+}

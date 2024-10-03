@@ -1,6 +1,6 @@
 #app {
   display: grid;
-  grid-template-columns: 30% 68.8%;
+  grid-template-columns: 30% 68.5%;
 
   height: 100vh;
   overflow: hidden;
@@ -25,14 +25,7 @@
   main h2 {
     font: var(--heading-md);
     color: var(--text-heading);
-    margin-bottom: 40px;
-  }
-
-  main legend {
-    font: var(--heading-sm);
-    color: var(--text-heading);
-  }
-  
+  }  
 }
 
 main {
@@ -40,6 +33,8 @@ main {
   background-color: var(--shape-body);
   padding: 5rem 8.125rem;
   border-radius: 12px;
+  display: grid;
+  justify-content: center;
 
   & .main-container {
     max-width: 52.5rem;
@@ -56,38 +51,6 @@ main section .title {
   margin-bottom: 24px;
 }
 
-main footer {
-  border-top: 1px solid var(--input-stroke);
-  padding-top: 40px;
-
-  .item {
-    display: flex;
-    gap: 12px;
-    margin-bottom: 4.5px;
-  }
-
-  .item p {
-    font: var(--body-sm);
-    color: var(--text-body);
-  }
-
-  button {
-    background-color: var(--brand-dark);
-    border: none;
-    border-radius: 8px;
-    padding: 14px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    gap: 12px;
-    font: var(--body-md);
-    color: var(--text-heading);
-    margin-top: 52.5px;
-  }
-}
-
-
-
 aside {
   background-color: var(--shape-body);
   background-image: url("../assets/images/Background.png");
@@ -102,4 +65,5 @@ aside {
     max-width: 25rem;
   }
 }
+
 
